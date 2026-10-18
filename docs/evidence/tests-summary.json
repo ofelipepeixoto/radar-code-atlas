@@ -1,0 +1,45 @@
+{
+  "suite": "original local contracts, acquisition, query, parsing and consumer tests",
+  "runtime": {
+    "node": "20.20.2",
+    "python": "3.13.13"
+  },
+  "commands": [
+    "npm run check",
+    "npm test",
+    "node examples/demo.mjs"
+  ],
+  "counts": {
+    "tests": 126,
+    "pass": 126,
+    "fail": 0,
+    "skipped": 0
+  },
+  "testOutputSha256": "4c660965bfd7a6339859935e0ed01a0b1ed2491ec582b7326d3176819f3faf3a",
+  "codeSha256": {
+    "adapters/security_workbench.py": "734051b871fc65e5de0aab75ce7009de43fb05a345ac7f7012f528dce1148f4a",
+    "examples/demo.mjs": "2698652b03382b696103a68785693b3f6b846f24dfb5a33647005fce76b380b4",
+    "package-lock.json": "969cc59a030c4be04949c02a76e0d90b7790038efabda0d32a84f059676c1577",
+    "package.json": "47eeda5f8249fc1d03f9232fce263919b6606b4a940ca9ae88a1e2d2bc1dcc23",
+    "scripts/check.mjs": "c31cd1f713d8db0fe79e5946fe21ac81f362bd52eb1c40ed52b44a7cef3c4fa2",
+    "src/access-policy.mjs": "d56b965ae986c8eef5242c184ca00a2da8574f120f097c4d58e220b1ccccafb3",
+    "src/atlas.mjs": "2df11d0789414d8846830c8451d71e72e17bcc71f275b19e5d84f2aa8d3a07b1",
+    "src/cli.mjs": "3b16b5a287bba359728d87446996534ac6bd3fd2e857104943ff5152c47f5386",
+    "src/contracts.mjs": "61185aac1412061abca47106dc9871a5e11192e0ac762404825f22a6d211671f",
+    "src/github.mjs": "7cb69c297c526e5d5153066f06f9f93f0c7d1c5d2889fa801b58c2b14f66dd07",
+    "src/parser-worker.mjs": "4283b21d2360975977f5d55a44a41cb04f560296711b0a2dd9758dfafb34b977",
+    "src/parser.mjs": "f0f3995ea8a2d3031b6edd4a7866892b2dda2271ac5dc1e58e72a5a5e7d94a91",
+    "src/parser_worker.py": "04aad879252b76996353f3e1208e2d69ef85385609df5eba372f25db2e831e4b",
+    "src/snapshot.mjs": "03a5e6561bf8be2de37a989ae810ccc813e57a340d162db2cf7eab6f49333a7f",
+    "tests/access-policy.test.mjs": "fde8d2c2ad53a89981c8aaeadfb27212e1ddddaf8ec4b012867f30a160dc03d2",
+    "tests/atlas.test.mjs": "a0d651431dcdceff5b19abf2bd59864d2d96fe9124699ea2a3dd17254210600e",
+    "tests/consumer.test.mjs": "27553abafc77dac17fc525d199824e1e559409038a329d6f260427b4c8a350ac",
+    "tests/fixtures.mjs": "31958555464486d1914ea31a9006ba9a41843a68c157a8c68552e9ee031ae6ca",
+    "tests/snapshot.test.mjs": "6b1f702dd2532fc8f128755dc04b4129f8eac5c946646bd3951f6cc7cb4b9c97",
+    "tests/transport.test.mjs": "b14d272389732c59b3b51251bd7a970683bf2c9c4a1d5c0389cc2f2d0c114d29"
+  },
+  "limitations": [
+    "Synthetic verifier and API transport in automated tests; live HTTPS acquisition recorded separately.",
+    "CI Node 22 results must be checked on GitHub for the actual revision."
+  ]
+}

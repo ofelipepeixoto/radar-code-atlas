@@ -1,0 +1,51 @@
+{
+  "observedAt": "2026-10-18T15:49:47.076Z",
+  "transport": "actual HTTPS GET via src/github.mjs",
+  "node": "v20.20.2",
+  "scope": {
+    "repository": "ofelipepeixoto/security-workbench",
+    "repositoryId": 1419403320,
+    "commit": "cf906efd01c832632f96eafac6555d55f4e39ff9"
+  },
+  "snapshotDigest": "622df05348b2aa1cd6437f3ed30959d58809834cdca5021e5393c30d584eae21",
+  "files": [
+    {
+      "path": "workbench/github.py",
+      "blobSha": "92dcc255cf9ee8cc38cd5f9ea511c9478bbcd44e",
+      "sourceSha256": "94e42f55f36d73f61921d3ec1d8c96215bacc0d8650b97a282fc7c2026373682"
+    },
+    {
+      "path": "workbench/store.py",
+      "blobSha": "f330266aab2bb823964c128e2c1ac130a74d63c5",
+      "sourceSha256": "5d05d95afd707a7da57cb5eba59fffc34d513a72c89a604281bbf3cacfab74ee"
+    }
+  ],
+  "coverage": {
+    "filesRead": 2,
+    "bytesRead": 15169,
+    "entriesObserved": 95,
+    "requests": 21,
+    "partial": true,
+    "treeTraversalComplete": true,
+    "filesParsed": 2,
+    "parseErrors": [],
+    "semanticCoverage": "limited-syntax"
+  },
+  "declarations": 16,
+  "callExpressions": 187,
+  "query": "symbol_context",
+  "target": {
+    "name": "_request_json",
+    "path": "workbench/github.py",
+    "line": 28
+  },
+  "returned": 10,
+  "truncated": true,
+  "signatureVerified": false,
+  "limits": "API repository/commit binding over HTTPS; Git tree/blob hashes rechecked. Not proof of complete semantic relations or commit signature.",
+  "lexicallyContainedCalls": 18,
+  "impactPreview": {
+    "candidateCount": 0,
+    "limitation": "No matching terminal-name call was returned in these two files. This does not imply that the function has no consumers."
+  }
+}

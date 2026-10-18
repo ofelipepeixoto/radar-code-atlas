@@ -5,3 +5,14 @@ Resposta: versão, ferramenta, escopo, `snapshotDigest`, cobertura e limitaçõe
 Digest incluído no próprio arquivo não autentica origem. Reabertura exige digest conservado independentemente e reverificação dos hashes. A política OAuth preparatória não fica implicitamente ativa na CLI local.
 `impact_preview` apresenta referências sintáticas candidatas, não resolução de tipos, dependência comprovada, grafo completo ou garantia de quebra. Não faz inferência transitiva.
 Security Workbench: contexto apenas auxilia revisão, nunca cria achado confirmado nem amplia autorização. Conferir escopo, digest e trecho contra bytes confiáveis do consumidor. Sem integração automática à interface hospedada.
+
+## Limites efetivos da primeira implementação
+Seleção opcional `includePaths` deve ser explícita e passar pela mesma política de
+caminhos. Caminhos pedidos e não encontrados são relatados. Travessia completa é
+relativa aos filtros do piloto, não aos diretórios excluídos.
+TypeScript usa AST via Compiler API 5.8.3; Python usa `ast.parse`. São parsers
+sintáticos sem carregamento de dependências/configurações do alvo.
+Tokens da API não entram no ambiente dos workers. Timeout de 15s por parser e 60s
+para o conjunto; excesso/erro é cobertura parcial e não um índice vazio certificado.
+Não há indexação persistente em banco nesta fatia; o snapshot JSON local é reverificado
+a cada processo de consulta. Política de acesso injetável é separada da CLI local.
