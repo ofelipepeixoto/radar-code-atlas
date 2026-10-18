@@ -1,0 +1,8 @@
+node_modules/
+.env*
+*.pem
+*.key
+.state/
+.snapshots/
+__pycache__/
+*.pyc
