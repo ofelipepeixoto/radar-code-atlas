@@ -1,0 +1,13 @@
+{
+  "kind": "auxiliary-code-context",
+  "reviewState": "unreviewed",
+  "findingCreated": false,
+  "verifiedCitations": 11,
+  "scope": {
+    "repository": "ofelipepeixoto/security-workbench",
+    "repositoryId": 1419403320,
+    "commit": "cf906efd01c832632f96eafac6555d55f4e39ff9"
+  },
+  "snapshotDigest": "622df05348b2aa1cd6437f3ed30959d58809834cdca5021e5393c30d584eae21",
+  "limitation": "Local consumer seam checked against independently retained acquisition bytes, not integrated into the Workbench app or database."
+}
